@@ -1,0 +1,39 @@
+@import "./function.scss";
+.navbar {
+  ul {
+    list-style: none;
+
+    margin-bottom: 2rem;
+    li {
+      @include flex(space-between);
+    }
+    input {
+      background: none;
+      border: none;
+      outline: none;
+      background: white;
+      border: 0.1rem solid silver;
+      padding: 1rem 2rem;
+      width: 38rem;
+    }
+    button {
+      background: none;
+      border: none;
+      outline: none;
+      background: red;
+      transition: 0.6s;
+      border-radius: 0.5rem;
+      margin-left: 1rem;
+      width: 10rem;
+      color: white;
+      border: 0.1rem solid silver;
+      padding: 1rem 2rem;
+
+      &:hover {
+        outline: 0.1rem solid red;
+        background: none;
+        color: red;
+      }
+    }
+  }
+}
